@@ -1,20 +1,14 @@
-﻿//poseł 21
-//senator 30
-//prezydent 35
-
-int age;
-
-
+﻿
 Console.WriteLine("Wprowadź swój wiek: ");
 var enteredAge = Console.ReadLine();
 
-Int32.TryParse(enteredAge, out age);
+Int32.TryParse(enteredAge, out int age);
 
-if (age >= 21)
+if (age >= 21 && age < 30)
 {
     Console.WriteLine("Możesz zostać posłem.");
 }
-else if (age >= 30)
+else if (age >= 30 && age <35)
 {
     Console.WriteLine("Możesz zostać posłem lub senatorem.");
 }
